@@ -13,7 +13,7 @@ metadata:
   name: hostname
   name: '${ parameters.namespace ?: staging }'
 spec:
-  replicas: '${ #toInt( parameters.replica ?: 3) }'
+  replicas: '${ #toInt( parameters.replica ?: 2) }'
   selector:
     matchLabels:
       app: hostname
